@@ -3,17 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class TurnManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text talkText;
-    public Image characterImage;
+    [SerializeField] Text nameText;
+    [SerializeField] Text talkText;
+    [SerializeField] Image characterImage;
+    [SerializeField] CanvasGroup canvasGroup;
 
     public List<TurnInfo> turnInfos = new();
     public int index;
 
-    private void Start() => DoNext();
+    private void Start()
+    {
+        canvasGroup.DOFade(1, 0.5f);
+        DoNext();
+    }
     void Update()
     {
         if (Input.anyKeyDown)
@@ -25,10 +31,13 @@ public class TurnManager : MonoBehaviour
         index++;    
     }
 
+    public float speechSpeed = 0.3f;
     private void UpdateUI(TurnInfo turnInfo)
     {
         nameText.text = turnInfo.name;
-        talkText.text = turnInfo.talk;
         characterImage.sprite = turnInfo.image;
+
+        talkText.text = "";
+        talkText.DOText(turnInfo.talk, speechSpeed);
     }
 }
