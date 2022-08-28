@@ -1,4 +1,4 @@
-//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/.
+﻿//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/.
 // 			VisualNovelToolkit		     /_/_/_/_/_/_/_/_/_/.
 // Copyright ©2013 - Sol-tribe.	/_/_/_/_/_/_/_/_/_/.
 //_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/.
@@ -450,8 +450,8 @@ public class ScriptBinder : IScriptBinder {
         tweenFinished.functionName = "AnimationFinishedCallback";			
  
 		clip.AddEvent( tweenFinished );
-						
-        animation.AddClip(clip, name );
+		clip.legacy = true;
+		animation.AddClip(clip, name );
 		
 		// Now, Start the Animation.
         animation.Play( name );	
