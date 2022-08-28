@@ -3041,7 +3041,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 728131096649601221, guid: 3e656f23bf321774c828d865739f52d0, type: 3}
   m_PrefabInstance: {fileID: 530703814477636890}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1813183199}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04ef2e38ca58cd64d8719d57dcc866f6, type: 3}
@@ -4839,7 +4839,7 @@ MonoBehaviour:
   _data:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
-    - {fileID: 11400000, guid: 23eaa153e74c9cb4fbe73543e8272589, type: 2}
+    - {fileID: 11400000, guid: afa907ca8cc7fd84285b682485e567ff, type: 2}
 --- !u!114 &849066756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4853,7 +4853,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"IsOpen","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!1001 &850599693
 PrefabInstance:
@@ -6607,7 +6608,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Scene","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"Kind":"Scene","collection":{"$content":[{"name":"Inventory","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!4 &1218185771
 Transform:
@@ -11797,7 +11801,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8227792646582483839, guid: 86ded934b1ed0e84c89c726dfc3426e3, type: 3}
   m_PrefabInstance: {fileID: 1733976901}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2131012914}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 04ef2e38ca58cd64d8719d57dcc866f6, type: 3}
@@ -12086,6 +12090,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71a80d66dae24224ebcabfe39d23d6d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1813183199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9121358938839847441, guid: 3e656f23bf321774c828d865739f52d0, type: 3}
+  m_PrefabInstance: {fileID: 530703814477636890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1813183200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813183199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 66b08945fbca7d54cb7f31383084f4ad, type: 2}
+--- !u!114 &1813183201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813183199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"DoorToOpen","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 849066753}
 --- !u!1001 &1828140130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13728,6 +13770,43 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6263068918262230654, guid: 6aee1144b641c344eaef46e99efc6d5d, type: 3}
   m_PrefabInstance: {fileID: 2105905523}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2131012914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8227792646582483829, guid: 86ded934b1ed0e84c89c726dfc3426e3, type: 3}
+  m_PrefabInstance: {fileID: 1733976901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2131012915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131012914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fe5546f775c47d2820aa5e8a715f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 93ef876a5cb5aec4d96e08969b7ccd56, type: 2}
+--- !u!114 &2131012916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131012914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"KeyName","value":{"$content":"CatKey","$type":"System.String"},"typeHandle":{"Identification":"System.String,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
 --- !u!1001 &530703814477636890
 PrefabInstance:
   m_ObjectHideFlags: 0
