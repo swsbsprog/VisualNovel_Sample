@@ -1,21 +1,31 @@
-//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/.
+﻿//_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/.
 // 			VisualNovelToolkit		     /_/_/_/_/_/_/_/_/_/.
 // Copyright ©2013 - Sol-tribe.	/_/_/_/_/_/_/_/_/_/.
 //_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/.
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 /// <summary>
 /// It is required that there is a ViNo Component attached Object in your Scene.
 /// </summary>
 [ AddComponentMenu( "ViNo/Util/ViNo" )]
-public class ViNo : IScriptEngine{	
-	
-	void OnLevelWasLoaded( int index ){
-		if( loadLevelAndClearBackLog ){
-			ViNoBackLog.Clear();
-		}
-	}
+public class ViNo : IScriptEngine{
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+    {
+        if (loadLevelAndClearBackLog)
+        {
+            ViNoBackLog.Clear();
+        }
+    }
+
+
+	//void OnLevelWasLoaded( int index ){
+	//	if( loadLevelAndClearBackLog ){
+	//		ViNoBackLog.Clear();
+	//	}
+	//}
 
 	/// <summary>
 	/// Internal.
