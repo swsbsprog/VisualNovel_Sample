@@ -1,10 +1,15 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.VFX;
 
 namespace VisualScriptingTutorial
 {
     public class EntryPoint : MonoBehaviour
     {
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        static void InitStaticVariable()
+        {
+            s_Instance = default;
+        }
         private static EntryPoint s_Instance;
 
         [SerializeField] private PlayerControl PlayerPrefab;
