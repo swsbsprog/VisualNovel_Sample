@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-[System.Serializable, Inspectable]
+[Inspectable]
+[System.Serializable]
 public class TurnInfo
 {
     [Inspectable]
