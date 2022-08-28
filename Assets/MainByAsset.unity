@@ -5783,7 +5783,7 @@ MonoBehaviour:
   m_CompiledInternalCodeAsset: {fileID: 0}
   sceneName: Scene1
   method: 0
-  withFadeIn: 1
+  withFadeIn: 0
 --- !u!1 &759948055
 GameObject:
   m_ObjectHideFlags: 0
@@ -14985,11 +14985,11 @@ MonoBehaviour:
   m_ViNoTextBox: {fileID: 563557937}
   m_NameHndName: TextBox_Name
   m_DialogHndName: TextBox
-  xmlData: {fileID: 0}
+  xmlData: {fileID: 4900000, guid: fe3ba75744e08564889a02db875668d3, type: 3}
   dlgDataList:
   - active: 1
     dialogID: 0
-    show: 0
+    show: 1
     isName: 0
     isBGM: 0
     isSE: 0
@@ -15010,14 +15010,14 @@ MonoBehaviour:
       sceneName: 
       withFade: 0
     enterActorEntries:
-    - actorName: Sachi
+    - actorName: Marie
       state: 
-      position: 3
-      withFade: 0
+      position: 0
+      withFade: 1
     exitActorEntries: []
   - active: 1
     dialogID: 1
-    show: 0
+    show: 1
     isName: 1
     isBGM: 0
     isSE: 0
@@ -15025,8 +15025,8 @@ MonoBehaviour:
     isAnim: 0
     isClearMessageAfter: 1
     textBoxID: 0
-    nameText: Sachi
-    dialogText: Hello. I am Sachi.
+    nameText: myname
+    dialogText: test
     actionID: 0
     bgmAudioKey: 
     seAudioKey: 
@@ -15041,6 +15041,58 @@ MonoBehaviour:
     exitActorEntries: []
   - active: 1
     dialogID: 2
+    show: 1
+    isName: 1
+    isBGM: 0
+    isSE: 0
+    isVoice: 0
+    isAnim: 0
+    isClearMessageAfter: 1
+    textBoxID: 0
+    nameText: myname
+    dialogText: 
+    actionID: 1
+    bgmAudioKey: 
+    seAudioKey: 
+    voiceAudioKey: 
+    bgmAudioID: 0
+    seAudioID: 0
+    voiceAudioID: 0
+    scene:
+      sceneName: 
+      withFade: 0
+    enterActorEntries:
+    - actorName: Marie
+      state: 
+      position: 1
+      withFade: 0
+    exitActorEntries: []
+  - active: 1
+    dialogID: 3
+    show: 0
+    isName: 1
+    isBGM: 0
+    isSE: 0
+    isVoice: 0
+    isAnim: 0
+    isClearMessageAfter: 1
+    textBoxID: 0
+    nameText: Sachi
+    dialogText: Hello. I am Tester.
+    actionID: 0
+    bgmAudioKey: 
+    seAudioKey: 
+    voiceAudioKey: 
+    bgmAudioID: 0
+    seAudioID: 0
+    voiceAudioID: 0
+    scene:
+      sceneName: 
+      withFade: 0
+    enterActorEntries: []
+    exitActorEntries: []
+  - active: 1
+    dialogID: 4
     show: 0
     isName: 0
     isBGM: 0
@@ -15068,7 +15120,35 @@ MonoBehaviour:
       withFade: 0
     exitActorEntries: []
   - active: 1
-    dialogID: 3
+    dialogID: 5
+    show: 1
+    isName: 0
+    isBGM: 0
+    isSE: 0
+    isVoice: 0
+    isAnim: 0
+    isClearMessageAfter: 1
+    textBoxID: 0
+    nameText: 
+    dialogText: 
+    actionID: 2
+    bgmAudioKey: 
+    seAudioKey: 
+    voiceAudioKey: 
+    bgmAudioID: 0
+    seAudioID: 0
+    voiceAudioID: 0
+    scene:
+      sceneName: 
+      withFade: 0
+    enterActorEntries: []
+    exitActorEntries:
+    - actorName: Marie
+      state: 
+      position: 0
+      withFade: 0
+  - active: 1
+    dialogID: 6
     show: 0
     isName: 1
     isBGM: 0
@@ -15092,7 +15172,7 @@ MonoBehaviour:
     enterActorEntries: []
     exitActorEntries: []
   - active: 1
-    dialogID: 4
+    dialogID: 7
     show: 0
     isName: 1
     isBGM: 0
@@ -15116,7 +15196,7 @@ MonoBehaviour:
     enterActorEntries: []
     exitActorEntries: []
   - active: 1
-    dialogID: 5
+    dialogID: 8
     show: 0
     isName: 1
     isBGM: 0
@@ -15140,7 +15220,7 @@ MonoBehaviour:
     enterActorEntries: []
     exitActorEntries: []
   - active: 1
-    dialogID: 6
+    dialogID: 9
     show: 0
     isName: 0
     isBGM: 0
